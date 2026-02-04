@@ -5,13 +5,13 @@ int main()
 	printf("COFFEE MACHINE:\n");
 	
 	char cof_type;
-	int suger;
+	int sugar;
 	
 	
 	while(1)
 	{
 	
-	printf("\nChoose typee of these by tiping the first letter:\n\t "); 
+	printf("\nChoose type of these by tiping the first letter:\n\t "); 
 	
 	printf("\n\t LATTE\n\t CAPPUCCiNO \n\t ESPRESSO \n\t AMERiCANO\n\t ");
 	scanf(" %c",&cof_type);
@@ -28,14 +28,14 @@ int main()
 	
 	while(1)
 	{
-		printf("How many cube of suger you want?");
-		if (scanf("%d",&suger)!=1)
+		printf("How many cube of sugar you want?");
+		if (scanf("%d",&sugar)!=1)
 		{
 			while (getchar() != '\n' );
 			printf("YOU HAVE TO ENTER NUMBER!\n ");
 		continue;
 		}
-		if  (suger< 0)
+		if  (sugar< 0)
 			printf("IT CANNOT BE NEGATIVE!\n");
 		else 
 				
@@ -45,7 +45,7 @@ int main()
 			
 				 
 				 
-				printf("HERE YOUR LATTE WITH %d SUGER.\n"  ,suger );
+				printf("HERE YOUR LATTE WITH %d SUGAR.\n"  ,sugar );
 				break; 
 				
 			}
@@ -54,7 +54,7 @@ int main()
 			
 				 
 				 
-				printf("cWiTH %d SUGER.\n"  ,suger );
+				printf("cWiTH %d SUGAR.\n"  ,sugar );
 				break;  
 				
 				
@@ -64,7 +64,7 @@ int main()
 			
 				 
 			
-				printf("HERE YOUR ESPRESSO WiTH %d SUGER."  ,suger );
+				printf("HERE YOUR ESPRESSO WiTH %d SUGAR."  ,sugar );
 				break;  
 			
 			}
@@ -73,7 +73,7 @@ int main()
 		
 				
 			 
-				printf("HERE YOUR AMERiCANO WiTH %d SUGER."  ,suger );
+				printf("HERE YOUR AMERiCANO WiTH %d SUGAR."  ,sugar );
 				break;  
 				
 			}
@@ -86,3 +86,4 @@ int main()
 	return 0;
 
 }
+
